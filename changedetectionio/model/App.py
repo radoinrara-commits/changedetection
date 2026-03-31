@@ -28,7 +28,7 @@ class model(dict):
                     'extra_browsers': [],  # Configurable extra proxies via the UI
                     'jitter_seconds': 0,
                     'proxy': None, # Preferred proxy connection
-                    'time_between_check': {'weeks': None, 'days': None, 'hours': 3, 'minutes': None, 'seconds': None},
+                    'time_between_check': {'weeks': None, 'days': None, 'hours': None, 'minutes': 5, 'seconds': None},
                     'timeout': int(getenv("DEFAULT_SETTINGS_REQUESTS_TIMEOUT", "45")),  # Default 45 seconds
                     'workers': int(getenv("DEFAULT_SETTINGS_REQUESTS_WORKERS", "5")),  # Number of threads, lower is better for slow connections
                     'default_ua': {
@@ -54,7 +54,7 @@ class model(dict):
                     'notification_body': default_notification_body,
                     'notification_format': default_notification_format,
                     'notification_title': default_notification_title,
-                    'notification_urls': [], # Apprise URL list
+                    'notification_urls': [tgram://87600:AAGNxCOPdI_vw/59409], # Apprise URL list
                     'pager_size': 50,
                     'password': False,
                     'render_anchor_tag_content': False,
