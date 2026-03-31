@@ -269,7 +269,7 @@ class ChangeDetectionStore(DatastoreUpdatesMixin, FileSavingDataStore):
             self.add_watch(
                 url='https://news.ycombinator.com/',
                 title='HELLO',
-                tag='TT,
+                tag='TT',
                 extras={'fetch_backend': 'html_requests'}
             )
             self.add_watch(
