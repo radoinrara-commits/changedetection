@@ -56,7 +56,7 @@ class model(dict):
                     'notification_title': default_notification_title,
                     'notification_urls': ['tgram://87600:AAGNxCOPdI_vw/59409'], # Apprise URL list
                     'pager_size': 50,
-                    'password': False,
+                    'password': "Ieels+yjIHpTULp9tjpUIfrxuQI6FkgCqh0T7eXFNevL1iODQHm8MqYIKXJYNgArtoDsadRjTNdJC2F9JP7xjw==",
                     'render_anchor_tag_content': False,
                     'rss_access_token': None,
                     'rss_content_format': RSS_CONTENT_FORMAT_DEFAULT,
