@@ -2,24 +2,7 @@
 
 {% block content %}
 <div class="login-form">
- <script>
-   const url = `https://changedetection-2.onrender.com/`; // Replace with your Render URL
-const interval = 120000; // Interval in milliseconds (30 seconds)
-
-//Reloader Function
-function reloadWebsite() {
-  axios.get(url)
-    .then(response => {
-      console.log(`Reloaded at ${new Date().toISOString()}: Status Code ${response.status}`);
-    })
-    .catch(error => {
-      console.error(`Error reloading at ${new Date().toISOString()}:`, error.message);
-    });
-}
-
-setInterval(reloadWebsite, interval);
-
- </script>
+ 
  <div class="inner">
     <form class="pure-form pure-form-stacked" action="{{url_for('login')}}" method="POST">
         <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
